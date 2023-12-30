@@ -1,0 +1,613 @@
+{
+	"folders": [
+		{
+			"name": "Pong",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "G:\\UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Pong Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"Debug",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"Debug",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Pong Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"Debug",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"DebugGame",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"DebugGame",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Pong Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"DebugGame",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"Development",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"Development",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Pong Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"Development",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"Test",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"Test",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Pong Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"Test",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"Shipping",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"Shipping",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Pong Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "Pong Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Pong",
+					"Win64",
+					"Shipping",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "PongEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"PongEditor",
+					"Win64",
+					"Debug",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "PongEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"PongEditor",
+					"Win64",
+					"Debug",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"PongEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "PongEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"PongEditor",
+					"Win64",
+					"Debug",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "PongEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"PongEditor",
+					"Win64",
+					"DebugGame",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "PongEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"PongEditor",
+					"Win64",
+					"DebugGame",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"PongEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "PongEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"PongEditor",
+					"Win64",
+					"DebugGame",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "PongEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"PongEditor",
+					"Win64",
+					"Development",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "PongEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"PongEditor",
+					"Win64",
+					"Development",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"PongEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			},
+			{
+				"label": "PongEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"PongEditor",
+					"Win64",
+					"Development",
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "G:\\UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch Pong (Debug)",
+				"request": "launch",
+				"program": "G:\\unreal_engine_5_projekty\\Pong\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "Pong Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "G:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "G:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "G:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch Pong (DebugGame)",
+				"request": "launch",
+				"program": "G:\\unreal_engine_5_projekty\\Pong\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "Pong Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "G:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "G:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "G:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch Pong (Development)",
+				"request": "launch",
+				"program": "G:\\unreal_engine_5_projekty\\Pong\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "Pong Win64 Development Build",
+				"args": [
+				],
+				"cwd": "G:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "G:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "G:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch Pong (Test)",
+				"request": "launch",
+				"program": "G:\\unreal_engine_5_projekty\\Pong\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "Pong Win64 Test Build",
+				"args": [
+				],
+				"cwd": "G:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "G:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "G:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch Pong (Shipping)",
+				"request": "launch",
+				"program": "G:\\unreal_engine_5_projekty\\Pong\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "Pong Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "G:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "G:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "G:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch PongEditor (Debug)",
+				"request": "launch",
+				"program": "G:\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "PongEditor Win64 Debug Build",
+				"args": [
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject"
+				],
+				"cwd": "G:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "G:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "G:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch PongEditor (DebugGame)",
+				"request": "launch",
+				"program": "G:\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "PongEditor Win64 DebugGame Build",
+				"args": [
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject"
+				],
+				"cwd": "G:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "G:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "G:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch PongEditor (Development)",
+				"request": "launch",
+				"program": "G:\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "PongEditor Win64 Development Build",
+				"args": [
+					"G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject"
+				],
+				"cwd": "G:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "G:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "G:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "G:\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=G:\\unreal_engine_5_projekty\\Pong\\Pong.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "G:\\UE_5.3"
+			}
+		]
+	}
+}

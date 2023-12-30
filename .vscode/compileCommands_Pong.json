@@ -1,0 +1,26 @@
+[
+	{
+		"file": "G:\\unreal_engine_5_projekty\\Pong\\Source\\Pong\\Pong.Build.cs",
+		"arguments": [
+			"E:\\Programy\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\unreal_engine_5_projekty\\Pong\\.vscode\\compileCommands_Pong\\Pong.1.rsp"
+		],
+		"directory": "G:\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "G:\\unreal_engine_5_projekty\\Pong\\Source\\Pong\\Pong.cpp",
+		"arguments": [
+			"E:\\Programy\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\unreal_engine_5_projekty\\Pong\\.vscode\\compileCommands_Pong\\Pong.1.rsp"
+		],
+		"directory": "G:\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "G:\\unreal_engine_5_projekty\\Pong\\Source\\Pong\\Pong.h",
+		"arguments": [
+			"E:\\Programy\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe",
+			"@G:\\unreal_engine_5_projekty\\Pong\\.vscode\\compileCommands_Pong\\Pong.1.rsp"
+		],
+		"directory": "G:\\UE_5.3\\Engine\\Source"
+	}
+]
